@@ -1,7 +1,7 @@
 package com.example;
 
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CalculatorTest {
     @Test
@@ -16,3 +16,8 @@ public class CalculatorTest {
         assertEquals(1, calculator.subtract(3, 2));
     }
 }
+
+/*
+ * Changes:
+ * - No changes required for Guava dependency upgrade
+ */
