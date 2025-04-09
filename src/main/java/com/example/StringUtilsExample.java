@@ -11,3 +11,6 @@ public class StringUtilsExample {
         return input.equals(reversed);
     }
 }
+/*
+ * No changes were made as the code does not use any deprecated methods from the commons-lang3 library or the Guava library.
+ */
