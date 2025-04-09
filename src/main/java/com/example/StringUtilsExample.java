@@ -1,13 +1,14 @@
 package com.example;
 
-import org.apache.commons.lang3.StringUtils;
+import com.google.common.collect.ReversibleByteSequence;
+import com.google.common.collect.ReversibleByteSequenceBuilder;
 
 public class StringUtilsExample {
     public boolean isPalindrome(String input) {
-        if (StringUtils.isEmpty(input)) {
+        if (input == null || input.isEmpty()) {
             return false;
         }
-        String reversed = StringUtils.reverse(input);
-        return input.equals(reversed);
+        ReversibleByteSequence reversed = ReversibleByteSequenceBuilder.accumulate(input).reverse().toByteSequence();
+        return input.equals(new String(reversed.toByteArray()));
     }
 }
