@@ -24,7 +24,5 @@ public class StringUtilsExample {
 
 /*
  * Changes:
- * - Added JUnit 5 test for the isPalindrome method.
- * - No changes were made to the original code as it does not use any deprecated JUnit methods.
- * - No changes were made as the code does not use any deprecated methods from the commons-lang3 library.
- * - No changes were made as the code does not use any Guava dependency.*/
+ * - No changes were made as the code is already using JUnit 5 and does not contain any deprecated methods related to Guava.
+ */

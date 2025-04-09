@@ -16,3 +16,6 @@ public class GuavaExample {
 /*
  * No changes were made as the code is already compatible with the latest Guava version.
  */
+/*
+ * Summary of changes: No changes were made to the code as it does not use JUnit and the Guava library is up-to-date.
+ */
