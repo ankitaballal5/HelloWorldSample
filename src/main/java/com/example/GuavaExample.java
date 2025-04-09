@@ -1,3 +1,4 @@
+```java
 package com.example;
 
 import com.google.common.collect.ImmutableList;
@@ -7,3 +8,7 @@ public class GuavaExample {
         return ImmutableList.copyOf(elements);
     }
 }
+/* 
+ * No changes made.
+ */
+```
