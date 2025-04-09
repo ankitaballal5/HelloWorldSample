@@ -7,3 +7,12 @@ public class GuavaExample {
         return ImmutableList.copyOf(elements);
     }
 }
+/*
+ * No changes were made to this code as it does not directly use JUnit and the Guava library usage is up-to-date.
+ */
+/*
+ * No changes were made as the code does not use the commons-lang3 library.
+ */
+/*
+ * No changes were made as the code is already compatible with the latest Guava version.
+ */
