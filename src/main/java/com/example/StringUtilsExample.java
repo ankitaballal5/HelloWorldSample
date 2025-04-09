@@ -11,3 +11,4 @@ public class StringUtilsExample {
         return input.equals(reversed);
     }
 }
+// No changes were made as the code does not utilize the Guava library. It uses the Apache Commons Lang library.
