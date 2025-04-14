@@ -5,3 +5,5 @@ public class App {
         System.out.println("Hello, World!");
     }
 }
+
+// No changes were made to the code as it does not use the Guava library.
