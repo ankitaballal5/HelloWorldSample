@@ -1,6 +1,5 @@
 package com.example;
 
-import com.google.common.base.Splitter;
 import com.google.common.base.Strings;
 
 public class StringUtilsExample {
@@ -8,7 +7,7 @@ public class StringUtilsExample {
         if (Strings.isNullOrEmpty(input)) {
             return false;
         }
-        String reversed = Splitter.onChar(Character.valueOf('\n')).reverse().join(input);
+        String reversed = new StringBuilder(input).reverse().toString();
         return input.equals(reversed);
     }
 }
