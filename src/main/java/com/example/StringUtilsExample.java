@@ -1,13 +1,18 @@
 package com.example;
 
-import org.apache.commons.lang3.StringUtils;
+import com.google.common.collect.ImmutableList;
+import com.google.common.collect.ImmutableList.Builder;
+import java.util.stream.IntStream;
 
 public class StringUtilsExample {
     public boolean isPalindrome(String input) {
-        if (StringUtils.isEmpty(input)) {
+        if (input == null || input.isEmpty()) {
             return false;
         }
-        String reversed = StringUtils.reverse(input);
-        return input.equals(reversed);
+        Builder<Character> builder = ImmutableList.builder();
+        IntStream.range(0, input.length()).forEach(i -> builder.add(input.charAt(i)));
+        ImmutableList<Character> chars = builder.build();
+        ImmutableList<Character> reversed = chars.reverse();
+        return chars.equals(reversed);
     }
 }
