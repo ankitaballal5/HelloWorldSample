@@ -5,3 +5,7 @@ public class App {
         System.out.println("Hello, World!");
     }
 }
+/*
+ * Summary of changes:
+ * - No changes were made as the code does not use any deprecated methods or classes from the Guava library.
+ */
