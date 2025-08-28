@@ -1,7 +1,10 @@
 package com.example;
 
+import com.google.common.collect.ImmutableList;
+
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        ImmutableList<String> list = ImmutableList.of("Hello", "World!");
+        System.out.println(list.toString());
     }
 }

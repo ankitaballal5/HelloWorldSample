@@ -1,13 +1,17 @@
 package com.example;
 
 import org.apache.commons.lang3.StringUtils;
+import java.lang.String;
+import java.util.Arrays;
 
 public class StringUtilsExample {
     public boolean isPalindrome(String input) {
-        if (StringUtils.isEmpty(input)) {
+        if (String.valueOf(input).isBlank()) {
             return false;
         }
-        String reversed = StringUtils.reverse(input);
+        char[] chars = input.toCharArray();
+        Arrays.reverse(chars);
+        String reversed = new String(chars);
         return input.equals(reversed);
     }
 }
