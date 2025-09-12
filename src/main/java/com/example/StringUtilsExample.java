@@ -1,13 +1,18 @@
 package com.example;
 
-import org.apache.commons.lang3.StringUtils;
+import com.google.common.base.Strings;
+import com.google.common.collect.Lists;
+import com.google.common.primitives.Reversed;
+
+import java.util.List;
 
 public class StringUtilsExample {
     public boolean isPalindrome(String input) {
-        if (StringUtils.isEmpty(input)) {
+        if (Strings.isNullOrEmpty(input)) {
             return false;
         }
-        String reversed = StringUtils.reverse(input);
-        return input.equals(reversed);
+        List<Character> characters = Lists.charactersOf(input);
+        List<Character> reversed = Reversed.asList(characters);
+        return input.equals(String.valueOf(reversed));
     }
 }
