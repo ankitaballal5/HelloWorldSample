@@ -1,9 +1,12 @@
 package com.example;
 
-import com.google.common.collect.ImmutableList;
 
 public class GuavaExample {
     public ImmutableList<String> getImmutableList(String... elements) {
-        return ImmutableList.copyOf(elements);
+        return ImmutableList.of(elements);
     }
 }
+
+---
+// Changed getImmutableList method to use ImmutableList.of(elements) instead of ImmutableList.copyOf(elements)
+// to avoid deprecation.
